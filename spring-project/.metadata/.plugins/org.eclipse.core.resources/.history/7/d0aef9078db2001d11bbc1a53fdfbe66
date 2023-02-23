@@ -1,0 +1,11 @@
+create table employment_history(
+id int primary key auto_increment,
+emp_id int not null,
+organization_name varchar(30),
+from_date date,
+location varchar(30),
+country varchar(20),
+post varchar(30),
+skill_used varchar(50),
+FOREIGN KEY (emp_id) REFERENCES employees(id)
+);
